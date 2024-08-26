@@ -1,4 +1,5 @@
 ELavenAI
+
 ELavenAI adalah aplikasi web berbasis kecerdasan buatan yang dibangun menggunakan HTML, CSS, dan JavaScript, serta didukung oleh API model GEMINI AI 1.0 FLASH. Aplikasi ini dirancang untuk memberikan pengalaman interaktif dan responsif dalam memanfaatkan teknologi AI. Dengan ELavenAI, pengguna dapat menjalankan berbagai tugas berbasis AI langsung dari peramban mereka, baik untuk analisis data, interaksi cerdas, atau proyek pengembangan lainnya.
 
 Fitur Utama:
