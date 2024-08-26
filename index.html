@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Aplikasi AI oleh Egal</title>
+</head>
+
+<body>
+    <div class="app light">
+        <aside>
+            <nav>
+                <div class="nav-top">
+                    <button id="add-chat">
+                        <iconify-icon icon="bi:plus-lg"></iconify-icon> New Chat
+                    </button>
+                    <ul class="chats">
+                        <li>
+                            <div>
+                                <iconify-icon icon="bi:chat-left" class="icon"></iconify-icon>
+                                <span class="chat-title" contenteditable="">New Chat</span>
+                            </div>
+                            <div>
+                                <iconify-icon icon="bi:trash3" class="icon" onclick="removeChat(this)"></iconify-icon>
+                                <iconify-icon icon="bi:pen" class="icon" onclick="updateChatTitle(this)"></iconify-icon>
+                            </div>
+                        </li>
+                        <!-- Tambahkan lebih banyak chat di sini -->
+                    </ul>
+                </div>
+                <ul>
+                    <li id="delete">
+                        <iconify-icon icon="bi:trash3" class="icon"></iconify-icon> Clear Conversation
+                    </li>
+                    <li>
+                        <iconify-icon icon="bi:gear" class="icon"></iconify-icon> Settings
+                    </li>
+                    <li id="mode">
+                        <iconify-icon icon="bi:brightness-high" class="icon"></iconify-icon> Light Mode
+                    </li>
+                    <li>
+                        <iconify-icon icon="bi:globe-asia-australia" class="icon"></iconify-icon> English
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <div class="hints">
+                <img src="images/elaven.png" alt="" class="logo">
+                <p>Masukkan pesan Anda untuk memulai percakapan. Ini bisa berupa pertanyaan, pernyataan, atau teks
+                    lainnya.</p>
+            </div>
+            <div class="qna">
+                <!-- Area chat di sini -->
+            </div>
+            <!-- Elemen input dan tombol di luar area chat -->
+            <div class="request">
+                <div class="input-group">
+                    <iconify-icon icon="bi:person-fill-gear" class="icon"></iconify-icon>
+                    <input type="text" placeholder="Berikan prompt ....... " autofocus>
+                    <button id="send">Kirim</button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
