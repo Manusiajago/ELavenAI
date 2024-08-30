@@ -7,7 +7,8 @@ const app = document.querySelector('.app'),
     input = document.querySelector('.request input'),
     send = document.querySelector('#send');
 
-const API_KEY_GEMINI = "AIzaSyDZNu1iAL1G7X1_JKktQXfdhAdPzEq8j-M";
+// API key baru
+const API_KEY_GEMINI = "AIzaSyBZYr6Sc-z7gy7qjrmy34YN5L31CIt5YbE";
 const url = "https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent";
 
 mode.addEventListener('click', toggleMode);
@@ -47,7 +48,7 @@ async function getAnswer() {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'x-goog-api-key': API_KEY_GEMINI // API key Gemini
+            'x-goog-api-key': API_KEY_GEMINI // API key Gemini yang baru
         },
         body: JSON.stringify({
             contents: [
@@ -74,10 +75,8 @@ async function getAnswer() {
             const data = await res.json();
             console.log(data);
 
-
             if (data.candidates && data.candidates.length > 0) {
                 const candidateContent = data.candidates[0].content;
-
 
                 const msg = candidateContent.parts ? candidateContent.parts.map(part => part.text).join(' ') : 'No content found';
 
@@ -90,13 +89,11 @@ async function getAnswer() {
             console.error("API Error:", res.status, res.statusText);
         }
 
-
         input.value = '';
     } catch (err) {
         console.error("An error occurred:", err);
     }
 }
-
 
 function createChat(question, id) {
     return `
