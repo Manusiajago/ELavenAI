@@ -7,7 +7,7 @@ const app = document.querySelector('.app'),
     input = document.querySelector('.request input'),
     send = document.querySelector('#send');
 
-const API_KEY_GEMINI = "AIzaSyAUx3NDElkyktcbX_L_5Jh81hDMNDrw_00";
+const API_KEY_GEMINI = "AIzaSyDZNu1iAL1G7X1_JKktQXfdhAdPzEq8j-M";
 const url = "https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent";
 
 mode.addEventListener('click', toggleMode);
